@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: booking
+  # datasource:
+  #   url: jdbc:postgresql://localhost:5432/booking
+  #   username: booking
+  #   password: booking
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        "[format_sql]": true
+  docker:
+    compose:
+      lifecycle-management: start-and-stop

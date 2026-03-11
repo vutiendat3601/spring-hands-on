@@ -1,0 +1,10 @@
+name: vutiendat3601-booking
+services:
+  postgres:
+    image: postgres:18-trixie
+    environment:
+      POSTGRES_USER: booking
+      POSTGRES_PASSWORD: booking
+      POSTGRES_DB: booking
+    ports:
+      - "5432:5432"
